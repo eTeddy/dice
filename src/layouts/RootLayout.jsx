@@ -1,3 +1,4 @@
+import './RootLayout.css'
 import { Outlet, NavLink } from "react-router-dom";
 
 export function click_dice() {
@@ -12,12 +13,11 @@ export default function RootLayout() {
     <div className="root-layout">
       <header>
         <nav>
-          <NavLink to="/">🏡</NavLink>   
-          <NavLink to="dice_a">👨</NavLink>  
-          <NavLink to="dice_b">👨‍🦰</NavLink>         
-          <NavLink to="dice_c">🧔‍♂️</NavLink>     
-          <NavLink to="dice_d">👱‍♂️</NavLink>    
-
+          <NavLink to="/"><span className='dnav'>🏡</span></NavLink>   
+          <NavLink to="dice_a"><span className='dnav'>👨</span></NavLink>  
+          <NavLink to="dice_b"><span className='dnav'>👨‍🦰</span></NavLink>         
+          <NavLink to="dice_c"><span className='dnav'>🧔‍♂️</span></NavLink>     
+          <NavLink to="dice_d"><span className='dnav'>👱‍♂️</span></NavLink>   
         </nav>
       </header>
       <main>

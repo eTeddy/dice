@@ -40,7 +40,7 @@ export default function DiceC() {
           <img className='square' src={image}></img>
           <img className='square' src={image2}></img>
         </div>
-        <button type="button" class="btn btn-outline-primary" onClick={rollDice}>Roll Dice</button>
+        <button type="button" onClick={rollDice}>Roll Dice</button>
       </center>
     </div>
   );

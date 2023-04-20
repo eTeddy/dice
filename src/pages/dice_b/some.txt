@@ -1,0 +1,8 @@
+    /* Shake Dice */ 
+    document.querySelector('#die-1').classList.add("shake");
+    document.querySelector('#die-2').classList.add("shake");
+    setTimeout(()=> {
+      document.querySelector('#die-1').classList.remove("shake");
+      document.querySelector('#die-2').classList.remove("shake");
+    }
+   ,100); 

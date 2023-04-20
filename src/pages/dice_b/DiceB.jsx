@@ -1,34 +1,39 @@
-import React, { useState } from 'react';
-import './Dice_b.css';
+import './DiceB.css';
+import { useState } from 'react';
+
+import d1 from "./assets/dice1.jpg";
+import d2 from "./assets/dice2.jpg";
+import d3 from "./assets/dice3.jpg";
+import d4 from "./assets/dice4.jpg";
+import d5 from "./assets/dice5.jpg";
+import d6 from  "./assets/dice6.jpg";
 
 export default function DiceB() {
-  const [dieOneValue, setDieOneValue] = useState(1);
-  const [dieTwoValue, setDieTwoValue] = useState(1);
 
-  const images = [
-    "src/pages/dice_b/assets/dice-01.svg",
-    "src/pages/dice_b/assets/dice-02.svg",
-    "src/pages/dice_b/assets/dice-03.svg",
-    "src/pages/dice_b/assets/dice-04.svg",
-    "src/pages/dice_b/assets/dice-05.svg",
-    "src/pages/dice_b/assets/dice-06.svg",
-  ];
-    
-  function roll() {
-    const newDieOneValue = Math.floor(Math.random()*6) + 1;
-    const newDieTwoValue = Math.floor(Math.random()*6) + 1;
-    setDieOneValue(newDieOneValue);
-    setDieTwoValue(newDieTwoValue);
-    console.log(newDieOneValue, newDieTwoValue);
-    document.querySelector("#total").innerHTML = "Your roll is " + (newDieOneValue + newDieTwoValue);
+  var diceImages = [ d1, d2, d3, d4, d5, d6 ]
+
+  const [image1, setNewImage] = useState(diceImages[0])
+  const [image2, setNewImage2] = useState(diceImages[1])
+  const [ num1, setNum1 ] = useState(0)
+  const [ num2, setNum2 ] = useState(0)
+
+  const roll = () => {
+    // Generate random number
+    var randomNum1 = Math.floor(Math.random() * 6);
+    setNum1(randomNum1)
+    var randomNum2 = Math.floor(Math.random() * 6);
+    setNum2(randomNum2)
+    setNewImage(diceImages[randomNum1]);
+    setNewImage2(diceImages[randomNum2]);
+
     /* Shake Dice */ 
     document.querySelector('#die-1').classList.add("shake");
     document.querySelector('#die-2').classList.add("shake");
     setTimeout(()=> {
       document.querySelector('#die-1').classList.remove("shake");
       document.querySelector('#die-2').classList.remove("shake");
-    }
-   ,100);    
+    }, 100); 
+
   }
 
   return ( 
@@ -39,10 +44,10 @@ export default function DiceB() {
 
         <div className="db_container">
           <div className="dice-wrapper">
-            <img id="die-1" src={images[dieOneValue - 1]} alt={`Die 1: ${dieOneValue}`} />
-            <img id="die-2" src={images[dieTwoValue - 1]} alt={`Die 2: ${dieTwoValue}`} />
+            <img id="die-1" src={image1} />
+            <img id="die-2" src={image2} />
           </div>
-          <p id="total">Your roll is {dieOneValue + dieTwoValue}</p>
+          <p id="total">Your roll is {num1 + num2}</p>
           <button onClick={roll}>ROLL THE DICE</button>
         </div>    
       </div>
