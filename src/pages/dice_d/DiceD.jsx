@@ -53,7 +53,7 @@ export default function DiceD() {
           <div className="face left"></div>
         </div>
         <button className="roll" onClick={randomDice}>
-          Roll Dice
+          Roll 🎲 Dice
         </button>
       </div>
     </div>

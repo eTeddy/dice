@@ -48,7 +48,7 @@ export default function DiceB() {
             <img id="die-2" src={image2} />
           </div>
           <p id="total">Your roll is {num1 + num2}</p>
-          <button onClick={roll}>ROLL THE DICE</button>
+          <button onClick={roll}>Roll 🎲 Dice</button>
         </div>    
       </div>
     </div>
