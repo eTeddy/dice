@@ -18,8 +18,8 @@
   display: inline-block;
 }
 img {
-  width: 110px;
-  margin: 10px;
+  width: 100px;
+  margin: 0;
 }
 #result {
 	font-size: xx-large;
