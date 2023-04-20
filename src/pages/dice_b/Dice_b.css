@@ -1,0 +1,80 @@
+#kc {
+  color: #e92e3d;
+}
+#kc2 {
+  color: #e92e3d;
+}
+.white_background {
+  background: white;   
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+.dice_b {
+  height: 100vh;
+  background: linear-gradient(
+      #e92e3d,
+      #ff6e6a
+  ) 0 100% no-repeat;
+  background-size: 100% 50%;
+}
+.db_container {
+  background-color: whitesmoke;
+  width: 250px;
+  margin: 20px auto 0 auto;
+  padding: 30px 0 40px 0 ;
+  box-shadow: 15px 15px 15px rgba(50,50,50,0.25);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins",sans-serif;
+}
+.dice-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+p{
+  color: #e92e3d;
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+button{
+  background-color: #e92e3d;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 15px 0;
+  width: 150px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.shake {
+  animation: shake 0.1s infinite;
+  /*   animation: shake 0.5s infinite; */
+}
+img {
+  size: 100px;
+}
+
+
+
+
+
+@keyframes shake{
+  0%{
+      transform: rotate(8deg);
+  }
+  50%{
+      transform: rotate(-8deg);
+  }
+  100%{
+      transform: rotate(8deg);
+  }
+}
