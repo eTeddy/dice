@@ -13,7 +13,7 @@
   text-align: center;
 }
 .dice_b {
-  height: 400px;
+  height: 425px;
   background: linear-gradient(
       #e92e3d,
       #ff6e6a
@@ -41,7 +41,7 @@
 p{
   color: #e92e3d;
   font-size: 16px;
-  margin: 20px 0;
+  margin: 30px;
   font-weight: 500;
 }
 button{

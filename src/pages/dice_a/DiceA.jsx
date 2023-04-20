@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import './Dice_a.css';
+import './assets/dice1.jpg';
+import './assets/dice2.jpg';
+import './assets/dice3.jpg';
+import './assets/dice4.jpg';
+import './assets/dice5.jpg';
+import './assets/dice6.jpg';
 
 export default function DiceA() {
-  const [catImage, setCatImage] = useState('src/pages/dice_a/assets/dice1.jpg');
-  const [dogImage, setDogImage] = useState('src/pages/dice_a/assets/dice2.jpg');
+  const [catImage, setCatImage] = useState('./assets/dice1.jpg');
+  const [dogImage, setDogImage] = useState('./assets/dice2.jpg');
   const [result, setResult] = useState('');
 
   function rollDice() {
