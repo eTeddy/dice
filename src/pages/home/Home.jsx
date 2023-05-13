@@ -18,10 +18,17 @@ export default function Home() {
 
       </div>      
       <div className="footer">
-        <a href="https://eteddy.github.io/" target='_blank'>My Portfolio</a>
+        <a href="https://eteddy.github.io/" target='_blank'>Fun Projects</a>
+
+        <a href="https://www.worldflagcounter.com/details/iyj" target='_blank'>
+          <img src="https://www.worldflagcounter.com/iyj/" alt="Flag Counter" />
+        </a>
+
+{/*        
         <a href="https://www.worldflagcounter.com/details/iyc">
           <img className="footer_img" src="https://www.worldflagcounter.com/iyc/" alt="Flag Counter" />
-        </a>    
+        </a>  
+ */} 
         <p>Minimalist 🧡 May 2023</p>     
       </div>    
     </>
