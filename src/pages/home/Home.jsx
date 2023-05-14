@@ -18,8 +18,11 @@ export default function Home() {
 
       </div>      
       <div className="footer">
-        <a href="https://eteddy.github.io/" target='_blank'>Fun Projects</a>
 
+        <p>---------------</p>
+        <a href="https://eteddy.github.io/" target='_blank'>Fun Projects</a>
+        <p>---------------</p>
+        
         <a href="https://www.worldflagcounter.com/details/iyj" target='_blank'>
           <img width="250px" src="https://www.worldflagcounter.com/iyj/" alt="Flag Counter" />
         </a>
