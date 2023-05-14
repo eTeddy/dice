@@ -21,7 +21,7 @@ export default function Home() {
         <a href="https://eteddy.github.io/" target='_blank'>Fun Projects</a>
 
         <a href="https://www.worldflagcounter.com/details/iyj" target='_blank'>
-          <img src="https://www.worldflagcounter.com/iyj/" alt="Flag Counter" />
+          <img width="250px" src="https://www.worldflagcounter.com/iyj/" alt="Flag Counter" />
         </a>
 
 {/*        
