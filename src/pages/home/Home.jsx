@@ -24,7 +24,7 @@ export default function Home() {
         <p>---------------</p>
         
         <a href="https://www.worldflagcounter.com/details/iyj" target='_blank'>
-          <img width="250px" src="https://www.worldflagcounter.com/iyj/" alt="Flag Counter" />
+          <img className='footer_img' src="https://www.worldflagcounter.com/iyj/" alt="Flag Counter" />
         </a>
 
 {/*        

@@ -22,7 +22,7 @@ p {
   margin: 0 auto;
 }
 .footer * {
-  margin: 5px;
+  margin: 0;
 }
 .footer > a {
   color: #dad2ba;
@@ -31,5 +31,6 @@ p {
   color: #dad2ba;
 }
 .footer_img {
-  width: 200px;
+  width: 250px;
+  border-radius: 10px;
 }
